@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root{
+    --orangered: #ff4800;
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+header{
+    padding: 1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.hero .fa-joomla{
+    font-size: 50px;
+    color: var(--orangered);
+}
+.hero .navbar .btn{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: var(--orangered);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.hero .navbar i{
+    font-size: 20px;
+    margin-left: 5px;
+    color: var(--light-color);
+}
+.tech{
+    position: absolute;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    opacity: 0.8;
+    object-fit: contain;
+}
+.tech .imgBox{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.tech .imgBox img{
+    width: 98.7%;
+    height: 50vh;
+}
+.tech .imgBox h1{
+    z-index: 1000;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.tech .imgBox p{
+    position: absolute;
+    z-index: 1000;
+}

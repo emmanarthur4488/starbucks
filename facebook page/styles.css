@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+}
+.flex{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    padding: 0 15px;
+    min-height: 100vh;
+    justify-content: center;
+    background: #f0f2f5;
+    text-align: center;
+    align-items: center;
+}
+.facebook-page{
+    max-width: 1000px;
+    width: 100%;
+}
+.facebook-page .text{
+    margin-bottom: 50px;
+}
+.facebook-page h1{
+    padding-top: 6rem;
+    color: #1877f2;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.facebook-page p{
+    font-size: 1rem;
+    white-space: nowrap;
+    color: #494747;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0,0, 0.1), 0 8px 16px rgba(0, 0,0, 0.1);
+    width: 100%;
+}
+form input{
+    height: 55px;
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+    outline: none;
+}
+.link{
+    display: block;
+}
+.link .login{
+    background: #3c82dd;
+    width: 100%;
+    padding-top: 7px;padding-bottom: 7px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.link .forgot{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #2a9cb1;
+    text-decoration: none;
+}
+
+hr{
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+}
+.button a{
+    background: #1ca81c;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #fff;
+    border-radius: 6px;
+}

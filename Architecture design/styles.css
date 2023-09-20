@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --orange: #ff7a00;
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    font-family: 'Exo' sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: #444;
+    margin-top: 2rem 0;
+    padding-top: 6rem;
+    text-decoration-color: var(--orange);
+    text-decoration-style: solid;
+   
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    padding: 1rem 2rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+
+.header .logo, .fa-solid fa-heart-pulse{
+    font-size: 3.5rem;
+    text-decoration: none;
+    height: 3rem;
+    color: var(--orange);
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0; padding: 0;
+}
+
+.header nav ul li{
+    margin: 0 1.5rem;
+}
+
+.header nav ul li a{
+    font-size: 2rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover{
+    color: #000;
+}
+
+.header .bars{
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    display: none;
+}
+
+.home .hero{
+    min-height: 60vh;
+    background: url(img/interior-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.home .hero .text1{
+    font-size: 5rem;
+    width: 45rem;
+    background: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.home .hero .text2{
+    font-size: 3rem;
+    width: 37rem;
+    background: var(--orange);
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.home .counting{
+    min-height: 40vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .counting .box{
+    margin: 2rem 4rem;
+    text-align: center;
+    
+}
+
+.home .counting .box .count{
+    font-size: 6rem;
+    color: var(--light-color);
+}
+
+.home .counting .box h3{
+    font-size: 2rem;
+    color: var(--orange);
+}
+.about{
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .image{
+    padding: 2rem;
+}
+
+.about .image img{
+    height: 45rem;
+    object-fit: cover;
+    box-shadow: 1rem 1rem 0 1rem var(--orange);
+}
+.about .info{
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.about .info h2{
+    color: #cf9425;
+    font-size: 3rem;
+}
+
+.about .info p{
+    font-size: 1.4rem;
+    color: #444;
+    margin: 2rem 0;
+}
+
+.about .info .icons a{
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #333;
+    border-radius: .5rem;
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.about .info .icons a:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.service{
+    min-height: 100vh;
+}
+.service .box-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height: 25rem;
+    width: 25rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+    border-left: solid .5rem var(--orange);
+    border-right: solid .5rem var(--orange);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem 3rem;
+}
+
+.service .box-container .box .fa-solid{
+    color: var(--orange);
+    font-size: 5rem;
+}
+
+.service .box-container .box p{
+    color: var(--light-color);
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+.project{
+    min-height: 100vh;
+    background: #333;
+}
+.project .heading{
+    color: #fff;
+}
+
+.project .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project .box-container .box{
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .2rem .5rem #000;
+    overflow: hidden;
+}
+
+.project .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .box img:hover{
+    transform: scale(1.4);
+}
+
+.contact{
+    min-height: 100vh;
+}
+
+.contact-box-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-box-container .contact-box{
+    height: 15rem;
+    flex: 1 0 30rem;
+    margin: 2rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.contact-box-container .contact-box i{
+    color: var(--orange);
+    font-size: 4rem;
+}
+
+.contact-box-container .contact-box h3{
+    font-size: 1.8rem;
+    color: var(--light-color);
+    margin: 2rem 0;
+}
+
+.contact .form-container{
+    width: 90%;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0,.2);
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+}
+.contact .form-container form input, textarea{
+    height: 4.5rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0,.2);
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+.contact .form-container form .inputBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .form-container form input[type="text"]{
+    width: 49%;
+}
+
+.contact .form-container form input[type="email"]{
+    width: 100%;
+}
+
+.contact .form-container form textarea{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+    overflow-y: auto;
+}
+
+.contact .form-container form input[type="submit"]{
+    background: var(--orange);
+    width: 15rem;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 30px;
+}
+
+.contact .form-container form input[type="submit"]:hover{
+    opacity: .8;
+}
+
+.footer{
+    background: #333;
+    /* text-align: center; */
+}
+.footer .row{
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .row .col-md-3{
+    margin: 1rem 0;
+}
+
+.footer .row .col-md-3 i{
+    color: var(--orange);
+    font-size: 3.5rem;
+}
+.footer h2{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.footer p{
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.footer .list{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.footer .list a{
+    color: #ccc;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.footer .letter p{
+    font-size: 2rem;
+}
+
+.footer .letter input[type="email"]{
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0 1rem;
+    color: #fff;
+    height: 3rem;
+    width: 100%;
+    border:solid .1rem #fff;
+    font-size: 1.5rem;
+}
+
+.footer .letter input[type="submit"]{
+    outline: none;
+    border: none;
+    background: #fff;
+    margin: 1rem 0;
+    width: 10rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+}
+
+.footer .letter input[type="submit"]:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.footer .credit{
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    font-size: 2rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    margin-bottom: 0;
+    border-top: 1px solid #aaa;
+    letter-spacing: .2rem;
+}
+
+.footer .credit span{
+    color: var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+    .header .bars{
+        display: block;
+    }
+    .header nav{
+        display: none;
+    }
+
+    .home .hero .text1{
+        font-size: 3.5rem;
+        width: 35rem;
+    }
+
+    .home .hero .text2{
+        font-size: 2.5rem;
+        width: 33rem;
+    }
+    .about .row{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+
+    .home .counting .box .count{
+        font-size: 4rem;
+        color: var(--light-color);
+    }
+    .footer .row{
+        display: block;
+        text-align: center;
+    }
+    .home .counting{
+        display: block;
+    }
+
+    .contact-box-container{
+        display: block;
+    }
+}

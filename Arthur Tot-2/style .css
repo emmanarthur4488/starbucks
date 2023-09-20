@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    background: #011a01;
+}
+
+.banner .content{
+    max-width: 600px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 5em;
+    color: tomato;
+}
+
+.banner .content p{
+    font-size: 1em;
+    color: tomato;
+}
+
+
+section{
+    padding: 40px;
+}
+
+section h2{
+    color: tomato;
+    font-weight: 700;
+    background: #062506;
+    padding: 10px;
+    border-right: solid 3px tomato;
+}
+
+section p{
+    color: #111;
+    background: #bbb8b8;
+    font-weight: 400;
+    padding: 5px;
+    
+}
+    
